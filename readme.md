@@ -19,8 +19,11 @@
      - API Key: APIキーを設定します。
      - API Endpoint: APIのエンドポイントを設定します。
        - デフォルトはhttps://api.openai.com/v1/chat/completionsです。
+       - OpenAI APIと同様のリクエスト形式をサポートするプロキシサーバを使用する場合に指定します。通常は変更する必要はありません。
      - Model: 使用するモデルを設定します。
        - デフォルトはgpt-4o-miniです。
+       - 利用可能なモデルの一覧は以下のドキュメントを参考にしてください。
+         - https://platform.openai.com/docs/api-reference/models
 
 ## 権限
 
