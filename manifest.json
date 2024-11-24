@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "regroup-tabs",
+    "version": "1.0",
+    "description": "OpenAI APIを使用してタブをクラスタリングし、タブグループを更新します。",
+    "permissions": [
+      "tabs",
+      "tabGroups",
+      "activeTab",
+      "storage"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "icons": {
+        "32": "images/icon32.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    }
+}

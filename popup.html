@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>regroup-tabs</title>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 8px;
+      width: 350px;
+      background-color: #f1f1f1;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    .input-group {
+      margin-bottom: 10px;
+    }
+    label {
+      margin-top: 10px;
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #333;
+    }
+    textarea, input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #fff;
+    }
+    textarea {
+      resize: vertical;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #4285F4;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      width: 40%;
+    }
+    button:hover {
+      background-color: #357ae8;
+    }
+    button:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+    h1 {
+      font-size: 24px;
+      color: #333;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .input-button-group {
+      display: flex;
+      align-items: center;
+    }
+    .input-button-group input {
+      flex: 1;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>regroup-tabs</h1>
+  <div class="section">
+    <div class="textarea-button-group">
+      <div class="input-group">
+        <label for="prompt">Custom Prompt:</label>
+        <textarea id="prompt" placeholder="How do you customize cluster?"></textarea>
+      </div>
+      <button id="regroup">Regroup Tabs</button>
+    </div>
+  </div>
+  <div class="section">
+    <div class="input-group">
+      <label for="apiKey">API Key:</label>
+      <div class="input-button-group">
+        <input type="password" id="apiKey" placeholder="Enter your API key here">
+        <button id="toggleApiKey">Show</button>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="input-group">
+      <label for="apiEndpoint">API Endpoint:</label>
+      <input type="text" id="apiEndpoint" placeholder="https://api.openai.com/v1/chat/completions">
+    </div>
+  </div>
+  <div class="section">
+    <div class="input-group">
+      <label for="model">Model:</label>
+      <input type="text" id="model" placeholder="Enter the model (e.g., gpt-4o-mini)">
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
