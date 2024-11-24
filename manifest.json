@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "regroup-tabs",
+    "name": "Tab Regrouper",
     "version": "1.0",
     "description": "OpenAI APIを使用してタブをクラスタリングし、タブグループを更新します。",
     "permissions": [

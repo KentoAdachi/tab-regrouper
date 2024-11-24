@@ -1,4 +1,4 @@
-# regroup-tabs
+# Tab Regrouper
 
 このChrome拡張機能は、OpenAI APIを使用して、ユーザー定義のプロンプトに基づいてブラウザタブをクラスタリングおよび再グループ化します。
 
